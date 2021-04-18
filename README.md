@@ -14,10 +14,11 @@
    1. ecr.yaml
    2. iam-role.yaml
    3. log-group.yaml
-   4. task-def.yaml
-   5. cluster.yaml
-   6. service.yaml
-   7. autoscaling.yaml
+   4. parameters.yaml
+   5. task-def.yaml
+   6. cluster.yaml
+   7. service.yaml
+   8. autoscaling.yaml
 
 ## ECR Image
 

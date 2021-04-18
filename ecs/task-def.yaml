@@ -81,14 +81,14 @@ Resources:
           Environment:
             - Name: APP_ENV
               Value: !Ref Env
-          # Secrets:
-          #   - Name: DB_USERNAME
-          #     ValueFrom: !Sub /${Env}/db/username
-          #   - Name: DB_PASSWORD
-          #     ValueFrom: !Sub /${Env}/db/password
-          #   - Name: DB_WRITE_HOST
-          #     ValueFrom: !Sub /${Env}/db/write-host
-          #   - Name: DB_READ_HOST
-          #     ValueFrom: !Sub /${Env}/db/read-host
-          #   - Name: DB_NAME
-          #     ValueFrom: !Sub /${Env}/db/name
+          Secrets:
+            - Name: DB_USERNAME
+              ValueFrom: !Sub /${Env}/db/username
+            - Name: DB_PASSWORD
+              ValueFrom: !Sub /${Env}/db/password
+            - Name: DB_WRITE_ENDPOINT
+              ValueFrom: !Sub /${Env}/db/write-endpoint
+            - Name: DB_READ_ENDPOINT
+              ValueFrom: !Sub /${Env}/db/read-endpoint
+            - Name: DB_NAME
+              ValueFrom: !Sub /${Env}/db/name
