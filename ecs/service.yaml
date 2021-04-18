@@ -59,6 +59,5 @@ Resources:
             - Fn::ImportValue: !Sub ${Env}-private-subnet2
       PlatformVersion: LATEST
       SchedulingStrategy: REPLICA
-      ServiceArn: String
       ServiceName: !Sub ${Env}-api-ecs-service
       TaskDefinition: !Ref TaskDef
